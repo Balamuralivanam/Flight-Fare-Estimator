@@ -1,13 +1,78 @@
-# Flight-Fare-Estimator
-In the epoch of rapid technological evolution, the FlightFare Estimator project represents a quantum leap in addressing the complexities of contemporary flight ticket pricing, epitomizing the synergy of advanced machine learning and cloud-native technologies, with a robust real-world implementation leveraging Docker.
-At its computational nucleus, the FlightFare Estimator harnesses cutting-edge machine learning algorithms meticulously crafted using TensorFlow and Scikit-Learn frameworks. 
-This computational prowess is seamlessly integrated into Docker containers, ensuring consistent deployment across various environments. 
-These containers are orchestrated with Kubernetes, a cloud-native tool, allowing for efficient scaling and resource optimization, ensuring that the FlightFare Estimator remains adaptive and responsive to the dynamic pricing dynamics of the airline industry.
-The cloud infrastructure, underpinning the real-world implementation, is orchestrated using Docker containers and managed with Kubernetes. 
-This orchestration facilitates the seamless deployment and scaling of the FlightFare Estimator, ensuring operational efficiency and optimal resource utilization. 
-Leveraging cloud-native principles, the project avails itself of AWS, Google Cloud, or similar platforms for hosting Docker containers, ensuring a robust and scalable computational foundation.
-The interaction with the Flight Fare Estimator is facilitated through an intuitive front-end interface crafted with HTML5, CSS3, and JavaScript, ensuring a seamless user experience. 
-Real-time communication with backend services is realized through RESTful APIs, with Docker containers acting as the conduits for data flow. 
-This setup ensures the continuous integration and deployment of the Flight Fare Estimator, providing users with precise and real-time estimates.
-In summary, the Flight Fare Estimator project stands as a technological tour de force, seamlessly blending advanced machine learning algorithms with cloud-native technologies, and implementing Docker containers for efficient orchestration and deployment. 
-This real-world implementation ensures the project's adaptability and responsiveness, optimizing financial resources and elevating travel experiences within the dynamic landscape of contemporary air travel.
+# FlightFareEstimatorProject
+## Problem Statement:
+
+<p>Travelling through flights has become an integral part of today’s lifestyle as more and more people are opting for faster travelling options. The flight ticket prices increase or decrease every now and then depending on various factors like timing of the flights, destination, and duration of flights various occasions such as vacations or festive season. Therefore, having some basic idea of the flight fares before planning the trip will surely help many people save money and time.</p>
+
+## Approach
+<p>The main goal is to predict the fares of the flights based on different factors available in the dataset.</p>
+<pre> 
+<li> Data Exploration     : I started exploring dataset using pandas,numpy,matplotlib and seaborn. </li>
+<li> Data visualization   : Ploted graphs to get insights about dependend and independed variables. </li>
+<li> Feature Engineering  :  Removed missing values and created new features as per insights.</li>
+<li> Model Selection I    :  1. Tested all base models to check the base accuracy.
+                             2. Also ploted residual plot to check whether a model is a good fit or not.</li>
+<li> Model Selection II   :  Performed Hyperparameter tuning using gridsearchCV and randomizedSearchCV.</li>
+<li> Pickle File          :  Selected model as per best accuracy and created pickle file using joblib .</li>
+<li> Webpage & deployment :  Created a webform that takes all the necessary inputs from user and shows output.
+                                After that I have deployed project on heroku and Microsoft Azure</li></pre>
+
+
+
+## Technologies Used
+<pre> 
+1. Python 
+2. Sklearn
+3. Flask
+4. Html
+5. Css
+6. Pandas, Numpy 
+7. Database 
+8. Hosting
+9. Docker 
+
+</pre>
+## Workflows
+
+1. update config.yaml
+2. update schema.yaml
+3. update params.yaml
+4. update the entity
+5. update the configuration manager in src config
+6. update the components
+7. update the pipeline
+8. update the main.py
+9. update the app.py
+
+# How to run?
+### STEPS:
+
+Clone the repository
+
+```bash
+https://github.com/prakash-d07/Flight_Fare_estimator_Project
+```
+### STEP 01- Create a conda environment after opening the repository
+
+```bash
+conda create -n venv python=3.8 -y
+```
+
+```bash
+conda activate venv/
+```
+
+
+### STEP 02- install the requirements
+```bash
+pip install -r requirements.txt
+```
+
+```bash
+# Finally run the following command
+python app.py
+```
+
+Now,
+```bash
+open up you local host and port
+```
